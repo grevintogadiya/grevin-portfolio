@@ -13,7 +13,6 @@ import {
   faInstagram,
   faFacebook,
   faWhatsapp,
-  faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
 import AOS from "aos";
@@ -33,8 +32,6 @@ function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const [activeSection, setActiveSection] = useState("#home");
-
-  const [showScrollButton, setShowScrollButton] = useState(false);
 
   /* =====================================================
      AOS INITIALIZATION
@@ -99,12 +96,6 @@ function Navbar() {
 
       /* Scroll top button */
 
-      if (scrollY > 250) {
-        setShowScrollButton(true);
-      } else {
-        setShowScrollButton(false);
-      }
-
       /* Active section */
 
       const sections = document.querySelectorAll("section");
@@ -148,14 +139,6 @@ function Navbar() {
   /* =====================================================
      SCROLL TOP
   ===================================================== */
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-
-      behavior: "smooth",
-    });
-  };
 
   /* =====================================================
      JSX
