@@ -194,18 +194,6 @@ function Navbar() {
               </a>
             </li>
 
-            {/* SKILLS */}
-
-            <li>
-              <a
-                href="#skills"
-                className={activeSection === "#skills" ? "active" : ""}
-                onClick={closeMenu}
-              >
-                Skills
-              </a>
-            </li>
-
             {/* SERVICES */}
 
             <li>
@@ -215,6 +203,16 @@ function Navbar() {
                 onClick={closeMenu}
               >
                 Services
+              </a>
+            </li>
+            {/* SKILLS */}
+            <li>
+              <a
+                href="#skills"
+                className={activeSection === "#skills" ? "active" : ""}
+                onClick={closeMenu}
+              >
+                Skills
               </a>
             </li>
 
