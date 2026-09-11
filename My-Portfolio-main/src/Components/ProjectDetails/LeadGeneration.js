@@ -1,30 +1,69 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../Footer/Footer";
 import "./LeadGeneration.css";
 
 function LeadGeneration() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
   return (
     <div className="lead-page">
       {/* =========================================
           FIXED HEADER
       ========================================= */}
 
-      <header className="project-header">
-        <a href="/" className="project-logo">
-          Grevin<span>.</span>
+      <header className="brand-project-header">
+        <a href="/" className="brand-project-logo" onClick={closeMenu}>
+          Grevin
         </a>
 
-        <nav className="project-nav">
-          <a href="/#home">Home</a>
-          <a href="/#about">About</a>
-          <a href="/#skills">Skills</a>
-          <a href="/#services">Services</a>
-          <a href="/#project" className="active">
+        {/* DESKTOP / MOBILE NAV */}
+
+        <nav className={`brand-project-nav ${menuOpen ? "mobile-open" : ""}`}>
+          <a href="/#home" onClick={closeMenu}>
+            Home
+          </a>
+
+          <a href="/#about" onClick={closeMenu}>
+            About
+          </a>
+
+          <a href="/#skills" onClick={closeMenu}>
+            Skills
+          </a>
+
+          <a href="/#services" onClick={closeMenu}>
+            Services
+          </a>
+
+          <a href="/#project" className="active" onClick={closeMenu}>
             Work
           </a>
-          <a href="/#experience">Experience</a>
-          <a href="/#contact">Contact</a>
+
+          <a href="/#experience" onClick={closeMenu}>
+            Experience
+          </a>
+
+          <a href="/#contact" onClick={closeMenu}>
+            Contact
+          </a>
         </nav>
+
+        {/* MOBILE MENU BUTTON */}
+
+        <button
+          type="button"
+          className={`brand-menu-button ${menuOpen ? "open" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle navigation"
+          aria-expanded={menuOpen}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </header>
 
       {/* =========================================
@@ -35,7 +74,7 @@ function LeadGeneration() {
         <div className="lead-project-container">
           {/* BACK BUTTON */}
 
-          <a href="/#project" className="back-projects">
+          <a href="/#project" className="back-projects" onClick={closeMenu}>
             ← Back to Work
           </a>
 
@@ -424,9 +463,7 @@ function LeadGeneration() {
           ========================================= */}
 
           <div className="bottom-back">
-            <div className="bottom-back">
-              <a href="/#project">← Explore More Projects</a>
-            </div>
+            <a href="/#project">← Explore More Projects</a>
           </div>
         </div>
       </main>

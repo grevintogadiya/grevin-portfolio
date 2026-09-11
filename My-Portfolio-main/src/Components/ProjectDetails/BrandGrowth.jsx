@@ -17,7 +17,7 @@ function BrandGrowth() {
 
       <header className="brand-project-header">
         <a href="/" className="brand-project-logo" onClick={closeMenu}>
-          Grevin<span>.</span>
+          Grevin
         </a>
 
         {/* DESKTOP NAV */}

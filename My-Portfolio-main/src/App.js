@@ -12,17 +12,27 @@ import Footer from "./Components/Footer/Footer";
 import LeadGeneration from "./Components/ProjectDetails/LeadGeneration";
 import BrandGrowth from "./Components/ProjectDetails/BrandGrowth";
 
+/* =========================================
+   HOME PAGE
+========================================= */
+
 function HomePage() {
   useEffect(() => {
     const hash = window.location.hash;
 
+    /* Project pages માટે scroll કરવાની જરૂર નથી */
     if (
-      hash &&
-      hash !== "#/projects/lead-generation" &&
-      hash !== "#/projects/brand-growth"
+      hash === "#/projects/lead-generation" ||
+      hash === "#/projects/brand-growth"
     ) {
+      return;
+    }
+
+    /* Home section navigation */
+    if (hash && hash.startsWith("#")) {
+      const sectionId = hash.substring(1);
+
       setTimeout(() => {
-        const sectionId = hash.replace("#", "");
         const section = document.getElementById(sectionId);
 
         if (section) {
@@ -48,6 +58,10 @@ function HomePage() {
     </>
   );
 }
+
+/* =========================================
+   MAIN APP
+========================================= */
 
 function App() {
   const [currentHash, setCurrentHash] = useState(window.location.hash);
@@ -81,7 +95,7 @@ function App() {
   }
 
   /* =========================================
-     HOME
+     HOME PAGE
   ========================================= */
 
   return <HomePage />;
