@@ -11,6 +11,7 @@ function Work() {
         "A performance-focused Meta Ads campaign designed to reach the right audience and generate quality business leads.",
       tags: ["Meta Ads", "Lead Generation", "Audience Targeting"],
       result: "Lead Generation",
+      link: "#/projects/lead-generation",
     },
     {
       number: "02",
@@ -20,6 +21,7 @@ function Work() {
         "A complete social media strategy focused on improving brand visibility, engagement and consistent online presence.",
       tags: ["Instagram", "Content Strategy", "Engagement"],
       result: "Brand Growth",
+      link: "#/projects/brand-growth",
     },
     {
       number: "03",
@@ -29,6 +31,7 @@ function Work() {
         "SEO strategy focused on improving search visibility, organic traffic and long-term online discoverability.",
       tags: ["SEO", "Keyword Research", "On-Page SEO"],
       result: "Organic Growth",
+      link: "#",
     },
     {
       number: "04",
@@ -38,6 +41,7 @@ function Work() {
         "A conversion-oriented campaign combining audience research, creative testing and continuous performance optimization.",
       tags: ["Performance Ads", "A/B Testing", "Optimization"],
       result: "Conversions",
+      link: "#",
     },
     {
       number: "05",
@@ -47,6 +51,7 @@ function Work() {
         "Targeted Google Ads campaign built to connect businesses with high-intent users actively searching for their services.",
       tags: ["Google Ads", "Search Ads", "Keyword Strategy"],
       result: "Qualified Traffic",
+      link: "#",
     },
     {
       number: "06",
@@ -56,6 +61,7 @@ function Work() {
         "An integrated digital marketing approach combining paid advertising, social media, SEO and lead generation.",
       tags: ["Digital Marketing", "Strategy", "Analytics"],
       result: "Business Growth",
+      link: "#",
     },
   ];
 
@@ -80,46 +86,51 @@ function Work() {
         {/* Projects */}
         <div className="work-grid">
           {projects.map((project, index) => (
-            <article
-              className="work-card"
+            <a
+              href={project.link}
+              target={project.link !== "#" ? "_blank" : undefined}
+              rel={project.link !== "#" ? "noopener noreferrer" : undefined}
+              className="work-card-link"
               key={project.number}
-              data-aos="fade-up"
-              data-aos-delay={index * 180}
-              data-aos-duration="700"
+              aria-label={`View ${project.title}`}
             >
-              {/* Top */}
-              <div className="work-card-top">
-                <span className="work-number">{project.number}</span>
+              <article
+                className="work-card"
+                data-aos="fade-up"
+                data-aos-delay={index * 180}
+                data-aos-duration="700"
+              >
+                <div className="work-card-top">
+                  <span className="work-number">{project.number}</span>
 
-                <span className="work-category">{project.category}</span>
-              </div>
-
-              {/* Main */}
-              <div className="work-card-content">
-                <h3>{project.title}</h3>
-
-                <p>{project.description}</p>
-
-                <div className="work-tags">
-                  {project.tags.map((tag) => (
-                    <span key={tag}>{tag}</span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Bottom */}
-              <div className="work-card-bottom">
-                <div>
-                  <small>Focus</small>
-                  <strong>{project.result}</strong>
+                  <span className="work-category">{project.category}</span>
                 </div>
 
-                <a href="#contact" aria-label={`Discuss ${project.title}`}>
-                  View Project
-                  <span>↗</span>
-                </a>
-              </div>
-            </article>
+                <div className="work-card-content">
+                  <h3>{project.title}</h3>
+
+                  <p>{project.description}</p>
+
+                  <div className="work-tags">
+                    {project.tags.map((tag) => (
+                      <span key={tag}>{tag}</span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="work-card-bottom">
+                  <div>
+                    <small>Focus</small>
+
+                    <strong>{project.result}</strong>
+                  </div>
+
+                  <span className="view-project">
+                    View Project <span>↗</span>
+                  </span>
+                </div>
+              </article>
+            </a>
           ))}
         </div>
       </div>

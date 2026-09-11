@@ -87,10 +87,6 @@ function Services() {
               <p>{service.description}</p>
 
               <div className="service-line"></div>
-
-              <a href="#contact" className="service-link">
-                Let's Talk <span>→</span>
-              </a>
             </div>
           ))}
         </div>

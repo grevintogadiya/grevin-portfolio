@@ -332,6 +332,10 @@
 
   color: #555555;
 
+  /* IMPORTANT:
+     Text will always stay on one line */
+  white-space: nowrap;
+
   transition: 0.25s ease;
 }
 
@@ -358,6 +362,10 @@
 
   .about-text {
     font-size: 15px;
+  }
+
+  .marketing-list span {
+    font-size: 12px;
   }
 }
 
@@ -402,6 +410,14 @@
   .about-card {
     max-width: 350px;
   }
+
+  .marketing-list {
+    gap: 12px 14px;
+  }
+
+  .marketing-list span {
+    font-size: 11px;
+  }
 }
 
 
@@ -439,11 +455,12 @@
   }
 
   .marketing-list {
-    gap: 12px;
+    gap: 11px 12px;
   }
 
   .marketing-list span {
-    font-size: 11px;
+    font-size: 10.5px;
+    white-space: nowrap;
   }
 }
 
@@ -451,9 +468,6 @@
 /* =====================================================
    TABLET PORTRAIT
    600px - 768px
-
-   IMPORTANT:
-   Here layout becomes ONE COLUMN
 ===================================================== */
 
 @media (max-width: 768px) {
@@ -494,6 +508,15 @@
 
   .about-card {
     max-width: 480px;
+  }
+
+  .marketing-list {
+    gap: 13px 18px;
+  }
+
+  .marketing-list span {
+    font-size: 12px;
+    white-space: nowrap;
   }
 }
 
@@ -564,7 +587,13 @@
   }
 
   .marketing-list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 11px 12px;
+  }
+
+  .marketing-list span {
+    font-size: 10.5px;
+    white-space: nowrap;
   }
 }
 
@@ -627,11 +656,12 @@
   }
 
   .marketing-list {
-    gap: 11px;
+    gap: 10px 10px;
   }
 
   .marketing-list span {
-    font-size: 11px;
+    font-size: 10px;
+    white-space: nowrap;
   }
 }
 
@@ -666,6 +696,11 @@
 
   .marketing-list {
     grid-template-columns: 1fr;
+  }
+
+  .marketing-list span {
+    font-size: 11px;
+    white-space: nowrap;
   }
 }
 

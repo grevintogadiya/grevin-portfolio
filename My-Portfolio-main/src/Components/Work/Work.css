@@ -105,10 +105,37 @@
 
 
 /* =========================================
+   FULL CARD CLICKABLE LINK
+========================================= */
+
+.work-card-link {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  color: inherit;
+  text-decoration: none;
+
+  border-radius: 15px;
+
+  outline: none;
+}
+
+.work-card-link:hover,
+.work-card-link:focus,
+.work-card-link:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* =========================================
    PROJECT CARD
 ========================================= */
 
 .work-card {
+  width: 100%;
   min-width: 0;
 
   min-height: 330px;
@@ -128,6 +155,8 @@
   position: relative;
 
   overflow: hidden;
+
+  cursor: pointer;
 
   transition:
     transform 0.35s ease,
@@ -155,7 +184,11 @@
 }
 
 
-.work-card:hover {
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.work-card-link:hover .work-card {
   transform: translateY(-8px);
 
   border-color: rgba(85, 85, 255, 0.25);
@@ -165,7 +198,7 @@
 }
 
 
-.work-card:hover::before {
+.work-card-link:hover .work-card::before {
   width: 100%;
 }
 
@@ -286,7 +319,7 @@
 }
 
 
-.work-card:hover .work-tags span {
+.work-card-link:hover .work-tags span {
   border-color: #e2e2ff;
 }
 
@@ -337,14 +370,16 @@
 }
 
 
-.work-card-bottom a {
+/* =========================================
+   VIEW PROJECT
+========================================= */
+
+.view-project {
   display: inline-flex;
 
   align-items: center;
 
   gap: 7px;
-
-  text-decoration: none;
 
   font-family: "Poppins", sans-serif;
 
@@ -357,20 +392,30 @@
 }
 
 
-.work-card-bottom a span {
+.view-project > span {
   font-size: 17px;
 
   transition: transform 0.3s ease;
 }
 
 
-.work-card-bottom a:hover {
+.work-card-link:hover .view-project {
   color: #5555ff;
 }
 
 
-.work-card-bottom a:hover span {
+.work-card-link:hover .view-project > span {
   transform: translate(3px, -3px);
+}
+
+
+/* =========================================
+   KEYBOARD ACCESSIBILITY
+========================================= */
+
+.work-card-link:focus-visible {
+  outline: 2px solid #5555ff;
+  outline-offset: 4px;
 }
 
 
@@ -445,6 +490,7 @@
 
   .work-card {
     min-height: 330px;
+
     padding: 22px;
   }
 
@@ -513,6 +559,10 @@
   .work-card-content p {
     font-size: 12.5px;
   }
+
+  .work-card-bottom {
+    gap: 15px;
+  }
 }
 
 
@@ -546,7 +596,7 @@
     gap: 10px;
   }
 
-  .work-card-bottom a {
+  .view-project {
     font-size: 10px;
   }
 }
@@ -560,8 +610,8 @@
 
   .work-card,
   .work-tags span,
-  .work-card-bottom a,
-  .work-card-bottom a span {
+  .view-project,
+  .view-project > span {
     transition: none;
   }
 }
