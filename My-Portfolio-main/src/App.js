@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ConversionCampaign from "./Components/ProjectDetails/ConversionCampaign";
 
 import Navbar from "./Components/Navbar/Navbar";
 import About from "./Components/About/About";
@@ -92,6 +93,13 @@ function App() {
 
   if (currentHash === "#/projects/brand-growth") {
     return <BrandGrowth />;
+  }
+  /* =========================================
+   CONVERSION CAMPAIGN PROJECT
+========================================= */
+
+  if (currentHash === "#/projects/conversion-campaign") {
+    return <ConversionCampaign />;
   }
 
   /* =========================================

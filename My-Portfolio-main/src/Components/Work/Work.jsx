@@ -41,27 +41,7 @@ function Work() {
         "A conversion-oriented campaign combining audience research, creative testing and continuous performance optimization.",
       tags: ["Performance Ads", "A/B Testing", "Optimization"],
       result: "Conversions",
-      link: "#",
-    },
-    {
-      number: "05",
-      category: "GOOGLE ADS",
-      title: "Search Advertising Campaign",
-      description:
-        "Targeted Google Ads campaign built to connect businesses with high-intent users actively searching for their services.",
-      tags: ["Google Ads", "Search Ads", "Keyword Strategy"],
-      result: "Qualified Traffic",
-      link: "#",
-    },
-    {
-      number: "06",
-      category: "DIGITAL MARKETING",
-      title: "Full Marketing Strategy",
-      description:
-        "An integrated digital marketing approach combining paid advertising, social media, SEO and lead generation.",
-      tags: ["Digital Marketing", "Strategy", "Analytics"],
-      result: "Business Growth",
-      link: "#",
+      link: "#/projects/conversion-campaign",
     },
   ];
 
