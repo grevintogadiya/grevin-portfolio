@@ -1,0 +1,19 @@
+:root {
+  --navy-blue: #1a1b4b;
+  --bright-purple: #4512bd;
+  --hover-purple: #3a0ca3;
+  --deep-purple: #2E1760;
+  --yellow-accent: #FFD700;
+  --card-bg: #0A0A1F;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Optional: Add some padding for sections */
+  section {
+    scroll-margin-top: 80px; /* Adjust based on your navbar height */
+    padding: 100px 20px;
+    min-height: 100vh;
+  }

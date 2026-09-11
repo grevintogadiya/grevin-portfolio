@@ -1,0 +1,685 @@
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-section {
+  width: 100%;
+  padding: clamp(70px, 8vw, 120px) clamp(20px, 8vw, 120px);
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  align-items: center;
+  gap: clamp(45px, 7vw, 90px);
+}
+
+
+/* =========================================
+   ABOUT LEFT CONTENT
+========================================= */
+
+.about-content {
+  width: 100%;
+  min-width: 0;
+}
+
+.about-small-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin: 0 0 18px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #5555ff;
+}
+
+.about-small-title::before {
+  content: "";
+  width: 28px;
+  height: 2px;
+  background: #5555ff;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.about-content h2 {
+  margin: 0 0 25px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(34px, 4vw, 50px);
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+
+  color: #161616;
+}
+
+.about-content h2 span {
+  color: #5555ff;
+}
+
+
+/* =========================================
+   PARAGRAPH
+========================================= */
+
+.about-text {
+  width: 100%;
+  max-width: 650px;
+
+  margin: 0 0 16px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(13px, 1.2vw, 15px);
+  line-height: 1.8;
+
+  color: #707070;
+}
+
+.about-text strong {
+  color: #222222;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   STATS
+========================================= */
+
+.about-stats {
+  width: 100%;
+  max-width: 500px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+
+  margin: 30px 0;
+}
+
+.stat-box {
+  min-width: 0;
+
+  padding: 15px 16px;
+
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  transition: 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(85, 85, 255, 0.25);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.stat-box h3 {
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(22px, 2.4vw, 29px);
+  line-height: 1;
+
+  font-weight: 700;
+  color: #5555ff;
+}
+
+.stat-box p {
+  margin: 7px 0 0;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  color: #777777;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.about-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 44px;
+
+  padding: 0 23px;
+
+  border-radius: 7px;
+
+  background: #5555ff;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  box-shadow: 0 8px 20px rgba(85, 85, 255, 0.18);
+
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  transform: translateY(-3px);
+  background: #4646ee;
+  box-shadow: 0 12px 28px rgba(85, 85, 255, 0.25);
+}
+
+
+/* =========================================
+   RIGHT CARD
+========================================= */
+
+.about-card-wrapper {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  min-width: 0;
+}
+
+.about-card {
+  width: 100%;
+  max-width: 380px;
+
+  box-sizing: border-box;
+
+  padding: clamp(25px, 3vw, 38px);
+
+  background: #ffffff;
+
+  border: 1px solid #e9e9ef;
+  border-radius: 16px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.07),
+    0 4px 12px rgba(85, 85, 255, 0.04);
+
+  position: relative;
+
+  transition: 0.35s ease;
+}
+
+.about-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 35px;
+
+  width: 65px;
+  height: 3px;
+
+  background: #5555ff;
+
+  border-radius: 0 0 10px 10px;
+}
+
+.about-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.09),
+    0 8px 20px rgba(85, 85, 255, 0.07);
+}
+
+
+/* =========================================
+   CARD ICON
+========================================= */
+
+.card-icon {
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+
+  border-radius: 13px;
+
+  background: #f2f2ff;
+  border: 1px solid #e8e8ff;
+
+  font-size: 25px;
+}
+
+
+/* =========================================
+   CARD HEADING
+========================================= */
+
+.about-card h3 {
+  margin: 0 0 12px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(20px, 2vw, 24px);
+  font-weight: 700;
+
+  color: #171717;
+}
+
+.about-card > p {
+  margin: 0 0 24px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  line-height: 1.75;
+
+  color: #707070;
+}
+
+
+/* =========================================
+   MARKETING LIST
+========================================= */
+
+.marketing-list {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 13px 18px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #eeeeee;
+}
+
+.marketing-list span {
+  min-width: 0;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+
+  line-height: 1.4;
+
+  color: #555555;
+
+  transition: 0.25s ease;
+}
+
+.marketing-list span:hover {
+  color: #5555ff;
+  transform: translateX(3px);
+}
+
+
+/* =====================================================
+   LARGE DESKTOP
+   1440px+
+===================================================== */
+
+@media (min-width: 1440px) {
+
+  .about-container {
+    max-width: 1250px;
+  }
+
+  .about-content h2 {
+    font-size: 52px;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+}
+
+
+/* =====================================================
+   NORMAL DESKTOP
+   1200px - 1439px
+===================================================== */
+
+@media (max-width: 1200px) {
+
+  .about-section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .about-container {
+    gap: 60px;
+  }
+}
+
+
+/* =====================================================
+   LAPTOP
+   1025px - 1199px
+===================================================== */
+
+@media (max-width: 1100px) {
+
+  .about-container {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(300px, 0.8fr);
+
+    gap: 45px;
+  }
+
+  .about-content h2 {
+    font-size: 42px;
+  }
+
+  .about-card {
+    max-width: 350px;
+  }
+}
+
+
+/* =====================================================
+   TABLET LANDSCAPE
+   769px - 1024px
+===================================================== */
+
+@media (max-width: 1024px) {
+
+  .about-section {
+    padding: 90px 5%;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr 0.85fr;
+    gap: 40px;
+  }
+
+  .about-content h2 {
+    font-size: 38px;
+  }
+
+  .about-text {
+    font-size: 13px;
+  }
+
+  .about-card {
+    max-width: 340px;
+    padding: 28px;
+  }
+
+  .about-card h3 {
+    font-size: 21px;
+  }
+
+  .marketing-list {
+    gap: 12px;
+  }
+
+  .marketing-list span {
+    font-size: 11px;
+  }
+}
+
+
+/* =====================================================
+   TABLET PORTRAIT
+   600px - 768px
+
+   IMPORTANT:
+   Here layout becomes ONE COLUMN
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .about-section {
+    padding: 80px 6%;
+  }
+
+  .about-container {
+    width: 100%;
+
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .about-content {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .about-content h2 {
+    font-size: clamp(34px, 6vw, 42px);
+  }
+
+  .about-text {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .about-stats {
+    max-width: 520px;
+  }
+
+  .about-card-wrapper {
+    width: 100%;
+  }
+
+  .about-card {
+    max-width: 480px;
+  }
+}
+
+
+/* =====================================================
+   LARGE MOBILE
+   481px - 599px
+===================================================== */
+
+@media (max-width: 599px) {
+
+  .about-section {
+    padding: 70px 6%;
+  }
+
+  .about-container {
+    gap: 45px;
+  }
+
+  .about-small-title {
+    font-size: 11px;
+    letter-spacing: 2.5px;
+  }
+
+  .about-content h2 {
+    font-size: 34px;
+    letter-spacing: -0.8px;
+  }
+
+  .about-text {
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .about-stats {
+    width: 100%;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 8px;
+
+    margin: 27px 0;
+  }
+
+  .stat-box {
+    padding: 13px 9px;
+  }
+
+  .stat-box h3 {
+    font-size: 22px;
+  }
+
+  .stat-box p {
+    font-size: 10px;
+  }
+
+  .about-card {
+    max-width: 100%;
+    padding: 27px 23px;
+  }
+
+  .about-card h3 {
+    font-size: 21px;
+  }
+
+  .about-card > p {
+    font-size: 12px;
+  }
+
+  .marketing-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+   376px - 480px
+===================================================== */
+
+@media (max-width: 480px) {
+
+  .about-section {
+    padding: 65px 5%;
+  }
+
+  .about-content h2 {
+    font-size: 31px;
+    line-height: 1.16;
+  }
+
+  .about-text {
+    font-size: 12.5px;
+  }
+
+  .about-stats {
+    gap: 7px;
+  }
+
+  .stat-box {
+    padding: 12px 7px;
+  }
+
+  .stat-box h3 {
+    font-size: 20px;
+  }
+
+  .stat-box p {
+    font-size: 9px;
+  }
+
+  .about-btn {
+    width: auto;
+    min-height: 42px;
+    padding: 0 19px;
+    font-size: 12px;
+  }
+
+  .about-card {
+    padding: 25px 20px;
+  }
+
+  .card-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
+  }
+
+  .about-card h3 {
+    font-size: 20px;
+  }
+
+  .marketing-list {
+    gap: 11px;
+  }
+
+  .marketing-list span {
+    font-size: 11px;
+  }
+}
+
+
+/* =====================================================
+   EXTRA SMALL MOBILE
+   0px - 375px
+===================================================== */
+
+@media (max-width: 375px) {
+
+  .about-section {
+    padding: 60px 5%;
+  }
+
+  .about-content h2 {
+    font-size: 28px;
+  }
+
+  .about-text {
+    font-size: 12px;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat-box:last-child {
+    grid-column: span 2;
+    max-width: 160px;
+  }
+
+  .marketing-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =====================================================
+   REDUCE MOTION
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .about-card,
+  .about-btn,
+  .stat-box,
+  .marketing-list span {
+    transition: none;
+  }
+}

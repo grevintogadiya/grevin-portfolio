@@ -1,0 +1,567 @@
+/* =========================================
+   WORK SECTION
+========================================= */
+
+.work-section {
+  width: 100%;
+  padding: clamp(70px, 8vw, 120px)
+           clamp(20px, 8vw, 120px);
+
+  background: #f9f9fc;
+
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.work-container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.work-header {
+  max-width: 720px;
+  margin-bottom: 55px;
+}
+
+.work-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin: 0 0 18px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+
+  color: #5555ff;
+}
+
+.work-label::before {
+  content: "";
+
+  width: 28px;
+  height: 2px;
+
+  background: #5555ff;
+  border-radius: 10px;
+}
+
+
+.work-header h2 {
+  margin: 0 0 18px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: clamp(34px, 4vw, 50px);
+  line-height: 1.15;
+
+  font-weight: 700;
+  letter-spacing: -1.5px;
+
+  color: #161616;
+}
+
+.work-header h2 span {
+  color: #5555ff;
+}
+
+
+.work-intro {
+  max-width: 650px;
+
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+  line-height: 1.8;
+
+  color: #707070;
+}
+
+
+/* =========================================
+   PROJECT GRID
+========================================= */
+
+.work-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 22px;
+}
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.work-card {
+  min-width: 0;
+
+  min-height: 330px;
+
+  padding: 28px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #ffffff;
+
+  border: 1px solid #e8e8ef;
+  border-radius: 15px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+
+/* Top accent */
+
+.work-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 0;
+  height: 3px;
+
+  background: #5555ff;
+
+  transition: width 0.35s ease;
+}
+
+
+.work-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(85, 85, 255, 0.25);
+
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.07);
+}
+
+
+.work-card:hover::before {
+  width: 100%;
+}
+
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.work-card-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 38px;
+}
+
+
+.work-number {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #a1a1a1;
+}
+
+
+.work-category {
+  max-width: 65%;
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  background: #f1f1ff;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 0.8px;
+
+  color: #5555ff;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.work-card-content {
+  flex: 1;
+}
+
+.work-card-content h3 {
+  margin: 0 0 13px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 22px;
+  line-height: 1.3;
+
+  font-weight: 700;
+
+  color: #171717;
+}
+
+
+.work-card-content p {
+  max-width: 520px;
+
+  margin: 0 0 22px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 13px;
+  line-height: 1.75;
+
+  color: #707070;
+}
+
+
+/* =========================================
+   TAGS
+========================================= */
+
+.work-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+
+.work-tags span {
+  padding: 6px 10px;
+
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  color: #666666;
+
+  transition: 0.25s ease;
+}
+
+
+.work-card:hover .work-tags span {
+  border-color: #e2e2ff;
+}
+
+
+/* =========================================
+   CARD BOTTOM
+========================================= */
+
+.work-card-bottom {
+  display: flex;
+
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding-top: 22px;
+  margin-top: 25px;
+
+  border-top: 1px solid #eeeeee;
+}
+
+
+.work-card-bottom div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+
+.work-card-bottom small {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 10px;
+
+  color: #999999;
+}
+
+
+.work-card-bottom strong {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  color: #5555ff;
+}
+
+
+.work-card-bottom a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  color: #222222;
+
+  transition: 0.3s ease;
+}
+
+
+.work-card-bottom a span {
+  font-size: 17px;
+
+  transition: transform 0.3s ease;
+}
+
+
+.work-card-bottom a:hover {
+  color: #5555ff;
+}
+
+
+.work-card-bottom a:hover span {
+  transform: translate(3px, -3px);
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1440px) {
+
+  .work-container {
+    max-width: 1250px;
+  }
+
+  .work-grid {
+    gap: 25px;
+  }
+
+  .work-card {
+    padding: 32px;
+  }
+}
+
+
+/* =========================================
+   LAPTOP
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .work-section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .work-grid {
+    gap: 18px;
+  }
+
+  .work-card {
+    padding: 24px;
+  }
+
+  .work-card-content h3 {
+    font-size: 20px;
+  }
+
+  .work-card-content p {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+  .work-section {
+    padding: 80px 6%;
+  }
+
+  .work-header {
+    margin-bottom: 42px;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+  }
+
+  .work-card {
+    min-height: 330px;
+    padding: 22px;
+  }
+
+  .work-card-top {
+    margin-bottom: 30px;
+  }
+
+  .work-card-content h3 {
+    font-size: 18px;
+  }
+
+  .work-card-content p {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .work-section {
+    padding: 70px 5%;
+  }
+
+  .work-header {
+    margin-bottom: 35px;
+  }
+
+  .work-label {
+    font-size: 11px;
+    letter-spacing: 2.5px;
+  }
+
+  .work-header h2 {
+    font-size: 32px;
+    letter-spacing: -0.8px;
+  }
+
+  .work-intro {
+    font-size: 12.5px;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .work-card {
+    min-height: auto;
+
+    padding: 23px;
+  }
+
+  .work-card-top {
+    margin-bottom: 28px;
+  }
+
+  .work-card-content h3 {
+    font-size: 20px;
+  }
+
+  .work-card-content p {
+    font-size: 12.5px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 375px) {
+
+  .work-section {
+    padding: 60px 5%;
+  }
+
+  .work-header h2 {
+    font-size: 28px;
+  }
+
+  .work-card {
+    padding: 20px;
+  }
+
+  .work-card-content h3 {
+    font-size: 18px;
+  }
+
+  .work-card-content p {
+    font-size: 12px;
+  }
+
+  .work-card-bottom {
+    gap: 10px;
+  }
+
+  .work-card-bottom a {
+    font-size: 10px;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .work-card,
+  .work-tags span,
+  .work-card-bottom a,
+  .work-card-bottom a span {
+    transition: none;
+  }
+}

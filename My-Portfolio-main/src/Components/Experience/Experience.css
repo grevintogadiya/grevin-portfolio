@@ -1,0 +1,561 @@
+/* =========================================
+   EXPERIENCE SECTION
+========================================= */
+
+.experience-section {
+  width: 100%;
+
+  padding: clamp(70px, 8vw, 120px)
+           clamp(20px, 8vw, 120px);
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+.experience-container {
+  width: 100%;
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.experience-header {
+  max-width: 700px;
+
+  margin-bottom: 65px;
+}
+
+.experience-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin: 0 0 18px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  color: #5555ff;
+}
+
+.experience-label::before {
+  content: "";
+
+  width: 28px;
+
+  height: 2px;
+
+  background: #5555ff;
+
+  border-radius: 10px;
+}
+
+
+.experience-header h2 {
+  margin: 0 0 18px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: clamp(34px, 4vw, 50px);
+
+  line-height: 1.15;
+
+  font-weight: 700;
+
+  letter-spacing: -1.5px;
+
+  color: #161616;
+}
+
+.experience-header h2 span {
+  color: #5555ff;
+}
+
+
+.experience-intro {
+  max-width: 620px;
+
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  color: #707070;
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.experience-timeline {
+  width: 100%;
+
+  position: relative;
+}
+
+
+/* =========================================
+   EXPERIENCE ITEM
+========================================= */
+
+.experience-item {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 45px minmax(0, 1fr);
+
+  gap: 25px;
+
+  position: relative;
+
+  margin-bottom: 30px;
+}
+
+
+/* =========================================
+   TIMELINE SIDE
+========================================= */
+
+.timeline-side {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  position: relative;
+}
+
+
+.timeline-dot {
+  width: 13px;
+  height: 13px;
+
+  margin-top: 32px;
+
+  border-radius: 50%;
+
+  background: #5555ff;
+
+  border: 4px solid #eeeeff;
+
+  box-sizing: content-box;
+
+  z-index: 2;
+}
+
+
+.timeline-line {
+  width: 1px;
+
+  position: absolute;
+
+  top: 49px;
+  bottom: -30px;
+
+  background: #dddded;
+}
+
+
+/* =========================================
+   EXPERIENCE CARD
+========================================= */
+
+.experience-card {
+  width: 100%;
+
+  padding: 28px 30px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #e9e9ef;
+
+  border-radius: 14px;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+
+.experience-card:hover {
+  transform: translateX(6px);
+
+  border-color: rgba(85, 85, 255, 0.25);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================
+   TOP
+========================================= */
+
+.experience-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 18px;
+}
+
+
+.experience-year {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
+
+  color: #5555ff;
+}
+
+
+.experience-index {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  color: #aaaaaa;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.experience-card h3 {
+  margin: 0 0 6px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 21px;
+
+  line-height: 1.35;
+
+  font-weight: 700;
+
+  color: #171717;
+}
+
+
+.experience-card h4 {
+  margin: 0 0 15px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  color: #5555ff;
+}
+
+
+.experience-card p {
+  max-width: 700px;
+
+  margin: 0 0 20px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 13px;
+
+  line-height: 1.75;
+
+  color: #707070;
+}
+
+
+/* =========================================
+   SKILLS
+========================================= */
+
+.experience-skills {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+
+.experience-skills span {
+  padding: 6px 10px;
+
+  border: 1px solid #eeeeee;
+
+  border-radius: 5px;
+
+  background: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 500;
+
+  color: #666666;
+
+  transition: 0.25s ease;
+}
+
+
+.experience-card:hover .experience-skills span {
+  border-color: #e2e2ff;
+
+  color: #5555ff;
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1440px) {
+
+  .experience-container {
+    max-width: 1050px;
+  }
+
+  .experience-card {
+    padding: 32px;
+  }
+}
+
+
+/* =========================================
+   LAPTOP
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .experience-section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .experience-container {
+    max-width: 950px;
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+  .experience-section {
+    padding: 80px 6%;
+  }
+
+  .experience-header {
+    margin-bottom: 45px;
+  }
+
+  .experience-item {
+    grid-template-columns: 30px minmax(0, 1fr);
+
+    gap: 16px;
+  }
+
+  .timeline-dot {
+    width: 10px;
+    height: 10px;
+
+    margin-top: 28px;
+
+    border-width: 3px;
+  }
+
+  .timeline-line {
+    top: 44px;
+  }
+
+  .experience-card {
+    padding: 24px;
+  }
+
+  .experience-card h3 {
+    font-size: 19px;
+  }
+
+  .experience-card p {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .experience-section {
+    padding: 70px 5%;
+  }
+
+  .experience-header {
+    margin-bottom: 38px;
+  }
+
+  .experience-label {
+    font-size: 11px;
+
+    letter-spacing: 2.5px;
+  }
+
+  .experience-header h2 {
+    font-size: 32px;
+
+    letter-spacing: -0.8px;
+  }
+
+  .experience-intro {
+    font-size: 12.5px;
+  }
+
+  .experience-item {
+    grid-template-columns: 20px minmax(0, 1fr);
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+  }
+
+  .timeline-dot {
+    width: 8px;
+    height: 8px;
+
+    margin-top: 25px;
+
+    border-width: 3px;
+  }
+
+  .timeline-line {
+    top: 39px;
+
+    bottom: -20px;
+  }
+
+  .experience-card {
+    padding: 21px;
+  }
+
+  .experience-top {
+    margin-bottom: 15px;
+  }
+
+  .experience-year {
+    font-size: 9px;
+  }
+
+  .experience-index {
+    font-size: 9px;
+  }
+
+  .experience-card h3 {
+    font-size: 18px;
+  }
+
+  .experience-card h4 {
+    font-size: 11px;
+  }
+
+  .experience-card p {
+    font-size: 12px;
+
+    line-height: 1.7;
+  }
+
+  .experience-skills {
+    gap: 6px;
+  }
+
+  .experience-skills span {
+    padding: 5px 8px;
+
+    font-size: 9px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 375px) {
+
+  .experience-section {
+    padding: 60px 5%;
+  }
+
+  .experience-header h2 {
+    font-size: 28px;
+  }
+
+  .experience-card {
+    padding: 19px;
+  }
+
+  .experience-card h3 {
+    font-size: 17px;
+  }
+
+  .experience-card p {
+    font-size: 11.5px;
+  }
+
+  .experience-skills span {
+    font-size: 8.5px;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .experience-card,
+  .experience-skills span {
+    transition: none;
+  }
+}

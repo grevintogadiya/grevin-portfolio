@@ -1,0 +1,508 @@
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+  width: 100%;
+
+  background: #111111;
+
+  color: #ffffff;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.footer-container {
+  width: 100%;
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 75px 30px 60px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.4fr
+    0.8fr
+    1fr
+    1fr;
+
+  gap: 55px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-brand {
+  min-width: 0;
+}
+
+
+.footer-logo {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 30px;
+
+  font-weight: 700;
+
+  letter-spacing: -1px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+
+.footer-logo span {
+  color: #5555ff;
+}
+
+
+.footer-brand > p {
+  max-width: 340px;
+
+  margin: 0 0 25px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.8;
+
+  color: #aaaaaa;
+}
+
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.footer-socials {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+}
+
+
+.footer-socials a {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #303030;
+
+  border-radius: 7px;
+
+  background: #181818;
+
+  color: #aaaaaa;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  transition: all 0.3s ease;
+}
+
+
+.footer-socials a:hover {
+  transform: translateY(-4px);
+
+  border-color: #5555ff;
+
+  background: #5555ff;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   COLUMNS
+========================================= */
+
+.footer-column {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.footer-column h3 {
+  margin: 0 0 22px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  color: #ffffff;
+
+  position: relative;
+}
+
+
+.footer-column h3::after {
+  content: "";
+
+  display: block;
+
+  width: 25px;
+
+  height: 2px;
+
+  margin-top: 9px;
+
+  background: #5555ff;
+
+  border-radius: 10px;
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+.footer-column > a {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  width: fit-content;
+
+  margin-bottom: 11px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 11px;
+
+  color: #999999;
+
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+
+.footer-column > a i {
+  font-size: 8px;
+
+  color: #5555ff;
+
+  transition: transform 0.25s ease;
+}
+
+
+.footer-column > a:hover {
+  color: #ffffff;
+
+  transform: translateX(3px);
+}
+
+
+.footer-column > a:hover i {
+  transform: translateX(3px);
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.footer-contact p {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  margin: 0 0 13px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+
+  color: #999999;
+}
+
+
+.footer-contact p > i {
+  width: 15px;
+
+  margin-top: 2px;
+
+  flex-shrink: 0;
+
+  color: #5555ff;
+
+  font-size: 11px;
+}
+
+
+.footer-contact p a {
+  color: #999999;
+
+  text-decoration: none;
+
+  overflow-wrap: anywhere;
+
+  transition: color 0.25s ease;
+}
+
+
+.footer-contact p a:hover {
+  color: #ffffff;
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.footer-bottom {
+  width: 100%;
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 20px 30px;
+
+  border-top: 1px solid #292929;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  box-sizing: border-box;
+}
+
+
+.footer-bottom p {
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 10px;
+
+  color: #777777;
+}
+
+
+.footer-bottom p span {
+  color: #777777;
+}
+
+
+.footer-bottom i {
+  margin: 0 5px;
+
+  color: #5555ff;
+
+  font-size: 9px;
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1440px) {
+
+  .footer-container,
+  .footer-bottom {
+    max-width: 1250px;
+  }
+
+  .footer-container {
+    padding-top: 85px;
+    padding-bottom: 65px;
+  }
+}
+
+
+/* =========================================
+   LAPTOP
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .footer-container {
+    padding-left: 5%;
+    padding-right: 5%;
+
+    gap: 35px;
+  }
+
+  .footer-bottom {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 45px 35px;
+
+    padding-top: 65px;
+  }
+
+  .footer-brand {
+    grid-column: span 2;
+  }
+
+  .footer-brand > p {
+    max-width: 550px;
+  }
+
+  .footer-bottom {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .footer-container {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+    padding: 55px 6% 45px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-logo {
+    font-size: 27px;
+  }
+
+  .footer-brand > p {
+    font-size: 11px;
+  }
+
+  .footer-column h3 {
+    font-size: 14px;
+
+    margin-bottom: 18px;
+  }
+
+  .footer-bottom {
+    padding: 18px 6%;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 8px;
+  }
+
+  .footer-bottom p {
+    font-size: 9px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 375px) {
+
+  .footer-container {
+    padding: 50px 5% 40px;
+
+    gap: 30px;
+  }
+
+  .footer-logo {
+    font-size: 25px;
+  }
+
+  .footer-brand > p {
+    font-size: 10px;
+  }
+
+  .footer-socials a {
+    width: 34px;
+    height: 34px;
+
+    font-size: 12px;
+  }
+
+  .footer-column > a {
+    font-size: 10px;
+  }
+
+  .footer-contact p {
+    font-size: 10px;
+  }
+
+  .footer-bottom {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .footer-socials a,
+  .footer-column > a,
+  .footer-column > a i {
+    transition: none;
+  }
+}
