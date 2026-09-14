@@ -4,7 +4,7 @@ import "./Experience.css";
 function Experience() {
   const experiences = [
     {
-      year: "2025 — Present",
+      year: "2026 — Present",
       role: "Digital Marketing Specialist",
       company: "Freelance / Independent",
       description:
@@ -12,7 +12,7 @@ function Experience() {
       skills: ["Meta Ads", "Google Ads", "SEO", "Lead Generation"],
     },
     {
-      year: "2025 — Present",
+      year: "2026 — Present",
       role: "Performance Marketing",
       company: "Digital Marketing Projects",
       description:
@@ -25,7 +25,7 @@ function Experience() {
       ],
     },
     {
-      year: "2025 — Present",
+      year: "2026 — Present",
       role: "Social Media & Marketing",
       company: "Freelance Projects",
       description:
