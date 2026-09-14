@@ -29,7 +29,7 @@ function Skills() {
       percentage: "88%",
     },
     {
-      title: "Lead Generation",
+      title: "Website Development",
       level: "Advanced",
       percentage: "90%",
     },

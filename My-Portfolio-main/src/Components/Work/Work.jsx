@@ -25,13 +25,13 @@ function Work() {
     },
     {
       number: "03",
-      category: "SEO",
-      title: "Organic Growth Campaign",
+      category: "WEBSITE DEVELOPMENT",
+      title: "Business Website Development",
       description:
-        "SEO strategy focused on improving search visibility, organic traffic and long-term online discoverability.",
-      tags: ["SEO", "Keyword Research", "On-Page SEO"],
-      result: "Organic Growth",
-      link: "#",
+        "Modern, responsive and high-performance websites designed to build a strong online presence and deliver a seamless user experience.",
+      tags: ["Web Development", "Responsive Design", "UI/UX"],
+      result: "Business Growth",
+      link: "http://www.bharattradeinternational.com/",
     },
     {
       number: "04",
