@@ -12,7 +12,7 @@ function Experience() {
       skills: ["Meta Ads", "Google Ads", "SEO", "Lead Generation"],
     },
     {
-      year: "2024 — 2025",
+      year: "2025 — Present",
       role: "Performance Marketing",
       company: "Digital Marketing Projects",
       description:
@@ -25,7 +25,7 @@ function Experience() {
       ],
     },
     {
-      year: "2023 — 2024",
+      year: "2025 — Present",
       role: "Social Media & Marketing",
       company: "Freelance Projects",
       description:
