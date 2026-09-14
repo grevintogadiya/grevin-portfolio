@@ -40,10 +40,10 @@ function Services() {
     },
     {
       number: "06",
-      icon: "🎯",
-      title: "Lead Generation",
+      icon: "🖥️",
+      title: "Website Development",
       description:
-        "Conversion-focused campaigns that help businesses attract qualified leads and grow their customer base.",
+        "Professional, responsive and conversion-focused websites built to strengthen your brand, engage users and drive business growth.",
     },
   ];
 
