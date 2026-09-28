@@ -117,7 +117,7 @@ function LeadGeneration() {
               <div className="report-period">
                 <span>Campaign Period</span>
 
-                <strong>1 Sep 2026 — 10 Sep 2026</strong>
+                <strong>29 Aug 2026 — 27 Sep 2026</strong>
               </div>
             </div>
 
@@ -173,7 +173,7 @@ function LeadGeneration() {
 
                 <small>AMOUNT SPENT</small>
 
-                <h3>₹3,011.27</h3>
+                <h3>₹8420.24</h3>
 
                 <p>Total campaign spend</p>
               </div>
@@ -185,7 +185,7 @@ function LeadGeneration() {
 
                 <small>REACH</small>
 
-                <h3>51,857</h3>
+                <h3>94,715</h3>
 
                 <p>People reached</p>
               </div>
@@ -197,7 +197,7 @@ function LeadGeneration() {
 
                 <small>IMPRESSIONS</small>
 
-                <h3>89,042</h3>
+                <h3>201,774</h3>
 
                 <p>Total impressions</p>
               </div>
@@ -209,7 +209,7 @@ function LeadGeneration() {
 
                 <small>RESULTS</small>
 
-                <h3>177</h3>
+                <h3>464</h3>
 
                 <p>Messaging conversations</p>
               </div>
@@ -221,7 +221,7 @@ function LeadGeneration() {
 
                 <small>COST PER RESULT</small>
 
-                <h3>₹17.01</h3>
+                <h3>₹18.15</h3>
 
                 <p>Average conversation cost</p>
               </div>
@@ -272,21 +272,21 @@ function LeadGeneration() {
                       </td>
 
                       <td>
-                        <b className="active-status">● Active</b>
+                        <b className="active-status">● Campaign Off</b>
                       </td>
 
-                      <td>₹1,011.02</td>
+                      <td>₹2806.15</td>
 
-                      <td>19,636</td>
+                      <td>34,408</td>
 
-                      <td>27,236</td>
+                      <td>57,537</td>
 
                       <td>
-                        <strong>41</strong>
+                        <strong>164</strong>
                       </td>
 
                       <td>
-                        <strong>₹24.66</strong>
+                        <strong>₹17.11</strong>
                       </td>
                     </tr>
 
@@ -301,21 +301,21 @@ function LeadGeneration() {
                       </td>
 
                       <td>
-                        <b className="active-status">● Active</b>
+                        <b className="active-status">● Campaign Off</b>
                       </td>
 
-                      <td>₹1,002.60</td>
+                      <td>₹2805.22</td>
 
-                      <td>23,546</td>
+                      <td>46,622</td>
 
-                      <td>32,134</td>
+                      <td>74,041</td>
 
                       <td>
-                        <strong>61</strong>
+                        <strong>188</strong>
                       </td>
 
                       <td>
-                        <strong>₹16.44</strong>
+                        <strong>₹14.92</strong>
                       </td>
                     </tr>
 
@@ -330,21 +330,21 @@ function LeadGeneration() {
                       </td>
 
                       <td>
-                        <b className="active-status">● Active</b>
+                        <b className="active-status">● Campaign Off</b>
                       </td>
 
-                      <td>₹997.65</td>
+                      <td>₹2808.87</td>
 
-                      <td>21,561</td>
+                      <td>42,394</td>
 
-                      <td>29,697</td>
+                      <td>57,537</td>
 
                       <td>
-                        <strong>75</strong>
+                        <strong>112</strong>
                       </td>
 
                       <td>
-                        <strong>₹13.30</strong>
+                        <strong>₹25.08</strong>
                       </td>
                     </tr>
 
@@ -358,23 +358,23 @@ function LeadGeneration() {
                       <td>—</td>
 
                       <td>
-                        <strong>₹3,011.27</strong>
+                        <strong>₹8420.24</strong>
                       </td>
 
                       <td>
-                        <strong>51,857</strong>
+                        <strong>94,715</strong>
                       </td>
 
                       <td>
-                        <strong>89,042</strong>
+                        <strong>201,774</strong>
                       </td>
 
                       <td>
-                        <strong>177</strong>
+                        <strong>464</strong>
                       </td>
 
                       <td>
-                        <strong>₹17.01</strong>
+                        <strong>₹18.15</strong>
                       </td>
                     </tr>
                   </tbody>
@@ -395,11 +395,11 @@ function LeadGeneration() {
 
               <h3>Best Performing Ad</h3>
 
-              <strong>Makeup Reels</strong>
+              <strong>Haircut Reels</strong>
 
               <p>
-                Generated 75 messaging conversations at an average cost of
-                ₹13.30 per result.
+                Generated 188 messaging conversations at an average cost of
+                ₹14.92 per result.
               </p>
             </div>
 
@@ -410,10 +410,10 @@ function LeadGeneration() {
 
               <h3>Total Results</h3>
 
-              <strong>177 Conversations</strong>
+              <strong>188 Conversations</strong>
 
               <p>
-                The campaign generated 177 messaging conversations across three
+                The campaign generated 188 messaging conversations across three
                 active advertisements.
               </p>
             </div>
@@ -425,10 +425,10 @@ function LeadGeneration() {
 
               <h3>Total Reach</h3>
 
-              <strong>51,857 People</strong>
+              <strong>46,622 People</strong>
 
               <p>
-                The campaign reached more than 51K people with approximately 89K
+                The campaign reached more than 46K people with approximately 75K
                 total impressions.
               </p>
             </div>
